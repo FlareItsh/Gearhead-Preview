@@ -1,0 +1,662 @@
+[
+  {
+    "make": "BYD",
+    "model": "Atto 3",
+    "size": "Large"
+  },
+  {
+    "make": "BYD",
+    "model": "Dolphin",
+    "size": "Small"
+  },
+  {
+    "make": "BYD",
+    "model": "Seagull",
+    "size": "Small"
+  },
+  {
+    "make": "BYD",
+    "model": "Seal 5 DM-i",
+    "size": "Medium"
+  },
+  {
+    "make": "BYD",
+    "model": "Sealion 6",
+    "size": "Large"
+  },
+  {
+    "make": "BYD",
+    "model": "Seal Sedan",
+    "size": "Medium"
+  },
+  {
+    "make": "BYD",
+    "model": "Shark 6",
+    "size": "X-Large"
+  },
+  {
+    "make": "Changan",
+    "model": "Alsvin",
+    "size": "Medium"
+  },
+  {
+    "make": "Changan",
+    "model": "CS35 Plus",
+    "size": "Medium"
+  },
+  {
+    "make": "Changan",
+    "model": "CS55 Plus",
+    "size": "Large"
+  },
+  {
+    "make": "Changan",
+    "model": "Lumin",
+    "size": "Small"
+  },
+  {
+    "make": "Chassis",
+    "model": "Traditional Jeepney",
+    "size": "XX-Large"
+  },
+  {
+    "make": "Chery",
+    "model": "Tiggo 2 Pro",
+    "size": "Medium"
+  },
+  {
+    "make": "Chery",
+    "model": "Tiggo 5X Pro",
+    "size": "Medium"
+  },
+  {
+    "make": "Chery",
+    "model": "Tiggo 7 Pro",
+    "size": "Large"
+  },
+  {
+    "make": "Chery",
+    "model": "Tiggo 8 Pro",
+    "size": "Large"
+  },
+  {
+    "make": "Chevrolet",
+    "model": "Cruze",
+    "size": "Medium"
+  },
+  {
+    "make": "Chevrolet",
+    "model": "Silverado",
+    "size": "XX-Large"
+  },
+  {
+    "make": "Daihatsu",
+    "model": "Mira",
+    "size": "Small"
+  },
+  {
+    "make": "Dongfeng",
+    "model": "Nano Box",
+    "size": "Small"
+  },
+  {
+    "make": "Ford",
+    "model": "EcoSport",
+    "size": "Medium"
+  },
+  {
+    "make": "Ford",
+    "model": "Everest",
+    "size": "Large"
+  },
+  {
+    "make": "Ford",
+    "model": "F-150",
+    "size": "XX-Large"
+  },
+  {
+    "make": "Ford",
+    "model": "Fiesta",
+    "size": "Small"
+  },
+  {
+    "make": "Ford",
+    "model": "Ranger",
+    "size": "X-Large"
+  },
+  {
+    "make": "Ford",
+    "model": "Ranger Raptor",
+    "size": "X-Large"
+  },
+  {
+    "make": "Ford",
+    "model": "Territory",
+    "size": "Large"
+  },
+  {
+    "make": "Foton",
+    "model": "Gratour",
+    "size": "X-Large"
+  },
+  {
+    "make": "Foton",
+    "model": "Modern Jeepney Class 2",
+    "size": "XX-Large"
+  },
+  {
+    "make": "Foton",
+    "model": "View Transvan",
+    "size": "X-Large"
+  },
+  {
+    "make": "GAC",
+    "model": "Empow",
+    "size": "Medium"
+  },
+  {
+    "make": "GAC",
+    "model": "GS3 Emzoom",
+    "size": "Medium"
+  },
+  {
+    "make": "GAC",
+    "model": "GS4",
+    "size": "Large"
+  },
+  {
+    "make": "GAC",
+    "model": "M6 Pro",
+    "size": "Large"
+  },
+  {
+    "make": "Geely",
+    "model": "Azkarra",
+    "size": "Large"
+  },
+  {
+    "make": "Geely",
+    "model": "Coolray",
+    "size": "Medium"
+  },
+  {
+    "make": "Geely",
+    "model": "Emgrand",
+    "size": "Medium"
+  },
+  {
+    "make": "Geely",
+    "model": "Okavango",
+    "size": "Large"
+  },
+  {
+    "make": "GWM",
+    "model": "Ora 03",
+    "size": "Small"
+  },
+  {
+    "make": "Honda",
+    "model": "Accord",
+    "size": "Large"
+  },
+  {
+    "make": "Honda",
+    "model": "BR-V",
+    "size": "Large"
+  },
+  {
+    "make": "Honda",
+    "model": "Brio",
+    "size": "Small"
+  },
+  {
+    "make": "Honda",
+    "model": "City",
+    "size": "Medium"
+  },
+  {
+    "make": "Honda",
+    "model": "Civic",
+    "size": "Medium"
+  },
+  {
+    "make": "Honda",
+    "model": "CR-V",
+    "size": "Large"
+  },
+  {
+    "make": "Honda",
+    "model": "Jazz",
+    "size": "Small"
+  },
+  {
+    "make": "Hyundai",
+    "model": "Accent",
+    "size": "Medium"
+  },
+  {
+    "make": "Hyundai",
+    "model": "Creta",
+    "size": "Medium"
+  },
+  {
+    "make": "Hyundai",
+    "model": "Eon",
+    "size": "Small"
+  },
+  {
+    "make": "Hyundai",
+    "model": "Getz",
+    "size": "Small"
+  },
+  {
+    "make": "Hyundai",
+    "model": "H-100",
+    "size": "X-Large"
+  },
+  {
+    "make": "Hyundai",
+    "model": "Reina",
+    "size": "Medium"
+  },
+  {
+    "make": "Hyundai",
+    "model": "Starex",
+    "size": "X-Large"
+  },
+  {
+    "make": "Hyundai",
+    "model": "Stargazer",
+    "size": "Large"
+  },
+  {
+    "make": "Hyundai",
+    "model": "Staria",
+    "size": "X-Large"
+  },
+  {
+    "make": "Isuzu",
+    "model": "Crosswind",
+    "size": "Large"
+  },
+  {
+    "make": "Isuzu",
+    "model": "D-Max",
+    "size": "X-Large"
+  },
+  {
+    "make": "Isuzu",
+    "model": "Hi-Lander",
+    "size": "Large"
+  },
+  {
+    "make": "Isuzu",
+    "model": "mu-X",
+    "size": "Large"
+  },
+  {
+    "make": "Isuzu",
+    "model": "Travis",
+    "size": "X-Large"
+  },
+  {
+    "make": "Jetour",
+    "model": "Dashing",
+    "size": "Large"
+  },
+  {
+    "make": "Jetour",
+    "model": "Ice Cream",
+    "size": "Small"
+  },
+  {
+    "make": "Jetour",
+    "model": "X70",
+    "size": "Large"
+  },
+  {
+    "make": "Kia",
+    "model": "K2500",
+    "size": "X-Large"
+  },
+  {
+    "make": "Kia",
+    "model": "Picanto",
+    "size": "Small"
+  },
+  {
+    "make": "Kia",
+    "model": "Soluto",
+    "size": "Medium"
+  },
+  {
+    "make": "Kia",
+    "model": "Sonet",
+    "size": "Medium"
+  },
+  {
+    "make": "Kia",
+    "model": "Stonic",
+    "size": "Medium"
+  },
+  {
+    "make": "Maxus",
+    "model": "G10",
+    "size": "X-Large"
+  },
+  {
+    "make": "Mazda",
+    "model": "2 Hatchback",
+    "size": "Small"
+  },
+  {
+    "make": "Mazda",
+    "model": "3 Sedan",
+    "size": "Medium"
+  },
+  {
+    "make": "Mazda",
+    "model": "6",
+    "size": "Large"
+  },
+  {
+    "make": "Mazda",
+    "model": "BT-50",
+    "size": "X-Large"
+  },
+  {
+    "make": "MG",
+    "model": "3 Hatchback",
+    "size": "Small"
+  },
+  {
+    "make": "MG",
+    "model": "4 EV",
+    "size": "Small"
+  },
+  {
+    "make": "MG",
+    "model": "5",
+    "size": "Medium"
+  },
+  {
+    "make": "MG",
+    "model": "G50 Plus",
+    "size": "Large"
+  },
+  {
+    "make": "MG",
+    "model": "GT",
+    "size": "Medium"
+  },
+  {
+    "make": "MG",
+    "model": "ZS",
+    "size": "Medium"
+  },
+  {
+    "make": "Mitsubishi",
+    "model": "Adventure",
+    "size": "Large"
+  },
+  {
+    "make": "Mitsubishi",
+    "model": "L300 Exceed",
+    "size": "X-Large"
+  },
+  {
+    "make": "Mitsubishi",
+    "model": "Mirage G4",
+    "size": "Medium"
+  },
+  {
+    "make": "Mitsubishi",
+    "model": "Mirage Hatchback",
+    "size": "Small"
+  },
+  {
+    "make": "Mitsubishi",
+    "model": "Montero Sport",
+    "size": "Large"
+  },
+  {
+    "make": "Mitsubishi",
+    "model": "Strada",
+    "size": "X-Large"
+  },
+  {
+    "make": "Mitsubishi",
+    "model": "Triton",
+    "size": "X-Large"
+  },
+  {
+    "make": "Mitsubishi",
+    "model": "Xpander",
+    "size": "Large"
+  },
+  {
+    "make": "Mitsubishi",
+    "model": "Xpander Cross",
+    "size": "Large"
+  },
+  {
+    "make": "Nissan",
+    "model": "Almera",
+    "size": "Small"
+  },
+  {
+    "make": "Nissan",
+    "model": "Kicks e-POWER",
+    "size": "Medium"
+  },
+  {
+    "make": "Nissan",
+    "model": "Navara",
+    "size": "X-Large"
+  },
+  {
+    "make": "Nissan",
+    "model": "Sentra",
+    "size": "Medium"
+  },
+  {
+    "make": "Nissan",
+    "model": "Terra",
+    "size": "Large"
+  },
+  {
+    "make": "Nissan",
+    "model": "Urvan",
+    "size": "X-Large"
+  },
+  {
+    "make": "RAM",
+    "model": "1500",
+    "size": "XX-Large"
+  },
+  {
+    "make": "Suzuki",
+    "model": "Alto",
+    "size": "Small"
+  },
+  {
+    "make": "Suzuki",
+    "model": "Carry Truck",
+    "size": "X-Large"
+  },
+  {
+    "make": "Suzuki",
+    "model": "Celerio",
+    "size": "Small"
+  },
+  {
+    "make": "Suzuki",
+    "model": "Ertiga",
+    "size": "Large"
+  },
+  {
+    "make": "Suzuki",
+    "model": "Every Van",
+    "size": "Small"
+  },
+  {
+    "make": "Suzuki",
+    "model": "Jimny",
+    "size": "Small"
+  },
+  {
+    "make": "Suzuki",
+    "model": "Multicab",
+    "size": "Small"
+  },
+  {
+    "make": "Suzuki",
+    "model": "S-Presso",
+    "size": "Small"
+  },
+  {
+    "make": "Suzuki",
+    "model": "Swift",
+    "size": "Small"
+  },
+  {
+    "make": "Suzuki",
+    "model": "Wagon R",
+    "size": "Small"
+  },
+  {
+    "make": "Suzuki",
+    "model": "XL7",
+    "size": "Large"
+  },
+  {
+    "make": "Toyota",
+    "model": "Avanza",
+    "size": "Large"
+  },
+  {
+    "make": "Toyota",
+    "model": "Camry",
+    "size": "Large"
+  },
+  {
+    "make": "Toyota",
+    "model": "Corolla Altis",
+    "size": "Medium"
+  },
+  {
+    "make": "Toyota",
+    "model": "Corolla Cross",
+    "size": "Large"
+  },
+  {
+    "make": "Toyota",
+    "model": "Fortuner",
+    "size": "Large"
+  },
+  {
+    "make": "Toyota",
+    "model": "Hiace Commuter",
+    "size": "X-Large"
+  },
+  {
+    "make": "Toyota",
+    "model": "Hiace Grandia",
+    "size": "X-Large"
+  },
+  {
+    "make": "Toyota",
+    "model": "Hilux",
+    "size": "X-Large"
+  },
+  {
+    "make": "Toyota",
+    "model": "Innova",
+    "size": "Large"
+  },
+  {
+    "make": "Toyota",
+    "model": "Innova Zenix",
+    "size": "Large"
+  },
+  {
+    "make": "Toyota",
+    "model": "Lite Ace Van/Pick-up",
+    "size": "X-Large"
+  },
+  {
+    "make": "Toyota",
+    "model": "Raize",
+    "size": "Medium"
+  },
+  {
+    "make": "Toyota",
+    "model": "RAV4",
+    "size": "Large"
+  },
+  {
+    "make": "Toyota",
+    "model": "Revo",
+    "size": "Large"
+  },
+  {
+    "make": "Toyota",
+    "model": "Rush",
+    "size": "Large"
+  },
+  {
+    "make": "Toyota",
+    "model": "Super Grandia",
+    "size": "X-Large"
+  },
+  {
+    "make": "Toyota",
+    "model": "Tamaraw",
+    "size": "X-Large"
+  },
+  {
+    "make": "Toyota",
+    "model": "Tamaraw FX",
+    "size": "X-Large"
+  },
+  {
+    "make": "Toyota",
+    "model": "Veloz",
+    "size": "Large"
+  },
+  {
+    "make": "Toyota",
+    "model": "Vios",
+    "size": "Small"
+  },
+  {
+    "make": "Toyota",
+    "model": "Wigo",
+    "size": "Small"
+  },
+  {
+    "make": "Toyota",
+    "model": "Yaris Cross",
+    "size": "Medium"
+  },
+  {
+    "make": "Toyota",
+    "model": "Yaris Hatchback",
+    "size": "Small"
+  },
+  {
+    "make": "VinFast",
+    "model": "VF 3",
+    "size": "Small"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Santana",
+    "size": "Medium"
+  },
+  {
+    "make": "Wuling",
+    "model": "Macaron Mini EV",
+    "size": "Small"
+  }
+]

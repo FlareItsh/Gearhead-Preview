@@ -1,0 +1,389 @@
+// Use DBML to define your database structure
+// https://dbml.dbdiagram.io/docs/
+
+Table app_settings {
+  id bigint [primary key]
+  key varchar [unique]
+  value text
+  group varchar
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table bays {
+  bay_id bigint [primary key]
+  bay_number varchar
+  status varchar
+  bay_type varchar
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table cache {
+  key varchar [primary key]
+  value mediumtext
+  expiration int
+}
+
+Table cache_locks {
+  key varchar [primary key]
+  owner varchar
+  expiration int
+}
+
+Table discounts {
+  discount_id bigint [primary key]
+  name varchar
+  type enum
+  value decimal
+  valid_from datetime
+  valid_to datetime
+  is_active tinyint
+  applies_to enum
+  min_spend decimal
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table discount_service {
+  id bigint [primary key]
+  discount_id bigint
+  service_id bigint
+  created_at timestamp
+  updated_at timestamp
+}
+
+
+Table employees {
+  employee_id bigint [primary key]
+  first_name varchar
+  middle_name varchar
+  last_name varchar
+  phone_number varchar [unique]
+  address varchar
+  status enum
+  commission_percentage decimal
+  assigned_status enum
+  date_hired date
+  employment_ended_at timestamp
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table failed_jobs {
+  id bigint [primary key]
+  uuid varchar [unique]
+  connection text
+  queue text
+  payload longtext
+  exception longtext
+  failed_at timestamp
+}
+
+Table gcash_settings {
+  id bigint [primary key]
+  account_name varchar
+  account_number varchar
+  qr_code_path varchar
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table job_batches {
+  id varchar [primary key]
+  name varchar
+  total_jobs int
+  pending_jobs int
+  failed_jobs int
+  failed_job_ids longtext
+  options mediumtext
+  cancelled_at int
+  created_at int
+  finished_at int
+}
+
+Table jobs {
+  id bigint [primary key]
+  queue varchar
+  payload longtext
+  attempts tinyint
+  reserved_at int
+  available_at int
+  created_at int
+
+  Indexes {
+    queue [name: "jobs_queue_index"]
+  }
+}
+
+Table landing_page_contents {
+  landing_page_id bigint [primary key]
+  last_edited_by bigint
+  title varchar
+  texts text
+  image_path varchar
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table migrations {
+  id int [primary key]
+  migration varchar
+  batch int
+}
+
+Table password_reset_tokens {
+  email varchar [primary key]
+  token varchar
+  created_at timestamp
+}
+
+Table payments {
+  payment_id bigint [primary key]
+  service_order_id bigint
+  employee_id bigint
+  amount decimal
+  payment_method enum
+  is_point_redeemed tinyint
+  gcash_reference varchar
+  gcash_screenshot varchar
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table personal_access_tokens {
+  id bigint [primary key]
+  tokenable_type varchar
+  tokenable_id bigint
+  name text
+  token varchar [unique]
+  abilities text
+  last_used_at timestamp
+  expires_at timestamp
+  created_at timestamp
+  updated_at timestamp
+
+  Indexes {
+    (tokenable_type, tokenable_id) [name: "personal_access_tokens_tokenable_type_tokenable_id_index"]
+    expires_at [name: "personal_access_tokens_expires_at_index"]
+  }
+}
+
+Table pullout_request_details {
+  pullout_request_details_id bigint [primary key]
+  pullout_service_id bigint
+  supply_id bigint
+  pullout_request_id bigint
+  quantity decimal
+  is_returned tinyint
+  returned_at datetime
+  returned_by varchar
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table pullout_requests {
+  pullout_request_id bigint [primary key]
+  employee_id bigint
+  date_time timestamp
+  approve_by varchar
+  approve_date timestamp
+  is_approve tinyint
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table pullout_services {
+  pullout_service_id bigint [primary key]
+  service_order_detail_id bigint
+  bay_number varchar
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table queue_lines {
+  queue_line_id bigint [primary key]
+  service_order_id bigint
+  status enum
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table reviews {
+  id bigint [primary key]
+  user_id bigint
+  name varchar
+  comment text
+  rating int
+  is_displayed tinyint
+  is_verified tinyint
+  created_at timestamp
+  updated_at timestamp
+}
+
+
+Table service_order_details {
+  service_order_detail_id bigint [primary key]
+  service_order_id bigint
+  service_variant bigint
+  quantity int
+  created_at timestamp
+  updated_at timestamp
+
+  Indexes {
+    (service_order_id, service_variant) [unique]
+  }
+}
+
+Table service_orders {
+  service_order_id bigint [primary key]
+  user_id bigint
+  employee_id bigint
+  bay_id bigint
+  status enum
+  order_date datetime
+  order_type enum
+  idempotency_key varchar [unique]
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table service_variants {
+  service_variant bigint [primary key]
+  service_id bigint
+  size varchar
+  price decimal
+  estimated_duration int
+  created_at timestamp
+  updated_at timestamp
+
+  Indexes {
+    (service_id, size) [unique]
+  }
+}
+
+Table services {
+  service_id bigint [primary key]
+  service_name varchar [unique]
+  description text
+  category varchar
+  status enum
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table sessions {
+  id varchar [primary key]
+  user_id bigint
+  ip_address varchar
+  user_agent text
+  payload longtext
+  last_activity int
+
+  Indexes {
+    last_activity [name: "sessions_last_activity_index"]
+  }
+}
+
+Table staff_payouts {
+  payout_id bigint [primary key]
+  employee_id bigint
+  amount decimal
+  payout_date date
+  remarks varchar
+  processed_by bigint
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table suppliers {
+  supplier_id bigint [primary key]
+  first_name varchar
+  middle_name varchar
+  last_name varchar
+  phone_number varchar
+  email varchar [unique]
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table supplies {
+  supply_id bigint [primary key]
+  supply_name varchar
+  unit varchar
+  reorder_point decimal
+  supply_type varchar
+  quantity_stock decimal
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table supply_purchase_details {
+  supply_purchase_details_id bigint [primary key]
+  supply_purchase_id bigint
+  supply_id bigint
+  quantity decimal
+  unit_price decimal
+  purchase_date timestamp
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table supply_purchases {
+  supply_purchase_id bigint [primary key]
+  supplier_id bigint
+  purchase_date datetime
+  purchase_reference varchar [unique]
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table users {
+  user_id bigint [primary key]
+  first_name varchar
+  middle_name varchar
+  last_name varchar
+  email varchar [unique]
+  email_verified_at timestamp
+  phone_number varchar
+  address varchar
+  password varchar
+  google_id varchar
+  google_token text
+  google_refresh_token text
+  two_factor_secret text
+  two_factor_recovery_codes text
+  two_factor_confirmed_at timestamp
+  role varchar
+  permissions json
+  remember_token varchar
+  created_at timestamp
+  updated_at timestamp
+}
+
+// Relationships
+Ref: landing_page_contents.last_edited_by > users.user_id [delete: cascade]
+Ref: payments.employee_id > employees.employee_id [delete: set null]
+Ref: payments.service_order_id > service_orders.service_order_id [delete: cascade]
+Ref: pullout_request_details.pullout_request_id > pullout_requests.pullout_request_id [delete: cascade]
+Ref: pullout_request_details.pullout_service_id > pullout_services.pullout_service_id [delete: cascade]
+Ref: pullout_request_details.supply_id > supplies.supply_id [delete: cascade]
+Ref: pullout_requests.employee_id > employees.employee_id [delete: cascade]
+Ref: pullout_services.service_order_detail_id > service_order_details.service_order_detail_id [delete: cascade]
+Ref: queue_lines.service_order_id > service_orders.service_order_id [delete: cascade]
+Ref: service_order_details.service_order_id > service_orders.service_order_id [delete: cascade]
+Ref: service_order_details.service_variant > service_variants.service_variant [delete: cascade]
+Ref: service_orders.bay_id > bays.bay_id [delete: set null]
+Ref: service_orders.employee_id > employees.employee_id [delete: set null]
+Ref: service_orders.user_id > users.user_id [delete: cascade]
+Ref: service_variants.service_id > services.service_id [delete: cascade]
+Ref: sessions.user_id > users.user_id [delete: cascade]
+Ref: staff_payouts.employee_id > employees.employee_id [delete: cascade]
+Ref: staff_payouts.processed_by > users.user_id [delete: set null]
+Ref: supply_purchase_details.supply_id > supplies.supply_id [delete: cascade]
+Ref: supply_purchase_details.supply_purchase_id > supply_purchases.supply_purchase_id [delete: cascade]
+Ref: supply_purchases.supplier_id > suppliers.supplier_id [delete: cascade]
+Ref: discount_service.discount_id > discounts.discount_id [delete: cascade]
+Ref: discount_service.service_id > services.service_id [delete: cascade]
+Ref: reviews.user_id > users.user_id [delete: set null]
+

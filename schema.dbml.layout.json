@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "positions": {
+    "table-app_settings": {
+      "x": 884,
+      "y": 2616
+    },
+    "table-bays": {
+      "x": 1328,
+      "y": 1600
+    },
+    "table-cache": {
+      "x": 1128,
+      "y": 2614.4857506275616
+    },
+    "table-cache_locks": {
+      "x": 1344,
+      "y": 2614.4857506275616
+    },
+    "table-discounts": {
+      "x": 620.0584779656468,
+      "y": 326.7434672954539
+    },
+    "table-discount_service": {
+      "x": 630.4385847423515,
+      "y": 734.7434672954539
+    },
+    "table-employees": {
+      "x": 1672,
+      "y": 144
+    },
+    "table-failed_jobs": {
+      "x": 1544,
+      "y": 2616
+    },
+    "table-gcash_settings": {
+      "x": 1776,
+      "y": 2616
+    },
+    "table-job_batches": {
+      "x": 1872,
+      "y": 2930.6999805996493
+    },
+    "table-jobs": {
+      "x": 884.8543454361886,
+      "y": 2928
+    },
+    "table-landing_page_contents": {
+      "x": 968,
+      "y": 1824
+    },
+    "table-migrations": {
+      "x": 1120,
+      "y": 2928.941318827798
+    },
+    "table-password_reset_tokens": {
+      "x": 1336,
+      "y": 2928.2695657797203
+    },
+    "table-payments": {
+      "x": 1730.9710119488846,
+      "y": 1504
+    },
+    "table-personal_access_tokens": {
+      "x": 1584,
+      "y": 2930.471740114511
+    },
+    "table-pullout_request_details": {
+      "x": 869.7506275619141,
+      "y": 536
+    },
+    "table-pullout_requests": {
+      "x": 871.0510560857488,
+      "y": 192
+    },
+    "table-pullout_services": {
+      "x": 1287.857768627705,
+      "y": 360
+    },
+    "table-queue_lines": {
+      "x": 950.5823502046392,
+      "y": 1231.3695722465038
+    },
+    "table-reviews": {
+      "x": 984.8175476215575,
+      "y": 2120
+    },
+    "table-service_order_details": {
+      "x": 1280,
+      "y": 928
+    },
+    "table-service_orders": {
+      "x": 1320,
+      "y": 1231.3695722465038
+    },
+    "table-service_variants": {
+      "x": 944,
+      "y": 927.3695722465038
+    },
+    "table-services": {
+      "x": 628.0584779656468,
+      "y": 960
+    },
+    "table-sessions": {
+      "x": 1000,
+      "y": 1560
+    },
+    "table-staff_payouts": {
+      "x": 1764.8840570337993,
+      "y": 1896
+    },
+    "table-suppliers": {
+      "x": 1753.9131189910117,
+      "y": 1184
+    },
+    "table-supplies": {
+      "x": 1288,
+      "y": 600
+    },
+    "table-supply_purchase_details": {
+      "x": 1670.837280384456,
+      "y": 624
+    },
+    "table-supply_purchases": {
+      "x": 1718.5877651173287,
+      "y": 936
+    },
+    "table-users": {
+      "x": 1326.321628811058,
+      "y": 1856
+    }
+  }
+}

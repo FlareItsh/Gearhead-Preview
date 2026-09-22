@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="scroll-smooth dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Inline script to detect and apply saved theme preference immediately -->
+    <script>
+      (function () {
+        const savedAppearance = localStorage.getItem('appearance')
+        let appearance = savedAppearance || 'dark'
+        const isDark =
+          appearance === 'dark' ||
+          (appearance === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)
+
+        if (isDark) {
+          document.documentElement.classList.add('dark')
+        } else {
+          document.documentElement.classList.remove('dark')
+        }
+        document.documentElement.style.colorScheme = isDark ? 'dark' : 'light'
+      })()
+    </script>
+
+    <style>
+      * {
+        font-family: 'DM Sans', sans-serif;
+      }
+    </style>
+
+    <title>Gearhead - Carwash & Detailing</title>
+    <meta name="description" content="Experience premium car care with Gearhead Carwash. Professional service, automated booking, and unmatched attention to detail." />
+
+    <link rel="icon" href="/car.png" sizes="any" />
+    <link rel="icon" href="/car.svg" type="image/svg+xml" />
+
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-background text-foreground custom-scrollbar antialiased">
+    <div id="app"></div>
+    <script type="module" src="/resources/js/preview/previewBootstrap.tsx"></script>
+  </body>
+</html>
