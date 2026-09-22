@@ -18,9 +18,10 @@ export default defineConfig(({ mode }) => {
         }),
       react(),
       tailwindcss(),
-      wayfinder({
-        formVariants: true,
-      }),
+      !isPreview &&
+        wayfinder({
+          formVariants: true,
+        }),
     ].filter(Boolean),
     esbuild: {
       jsx: 'automatic',
